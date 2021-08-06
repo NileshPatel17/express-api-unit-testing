@@ -1,0 +1,21 @@
+{
+  "name": "express-api-unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:create-dev":"sequelize-cli db:create --env=dev",
+    "db:migrate-dev":"npx sequelize-cli db:migrate --env=dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
