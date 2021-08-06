@@ -47,7 +47,6 @@ const getUserById = async (req, res) => {
 const updateUser = async (req, res) => {
   try {
     const id = Number(req.params.id);
-    console.log({ id, body: req.body });
     const [updated] = await UserModel.update(req.body, {
       where: {
         id,
