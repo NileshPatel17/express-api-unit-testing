@@ -8,7 +8,7 @@
     "db:migrate-dev": "npx sequelize-cli db:migrate --env=dev",
     "start": "nodemon src/server.js",
     "db:reset": "npx sequelize-cli db:drop --env=test && npx sequelize-cli db:create --env=test && npx sequelize-cli db:migrate --env=test && npx sequelize-cli db:seed:all --env=test",
-    "pretest":"cross-env NODE_ENV=test npm run db:reset",
+    "pretest": "cross-env NODE_ENV=test npm run db:reset",
     "db:create:test": "cross-env NODE_ENV=test npx sequelize-cli db:create",
     "test": "cross-env NODE_ENV=test jest --detectOpenHandles"
   },
@@ -24,6 +24,9 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "jest": "^27.0.6",
     "nodemon": "^2.0.12",
     "sequelize-cli": "^6.2.0",
